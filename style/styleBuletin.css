@@ -1,0 +1,208 @@
+.header-buletin{
+    margin-top: 100px;
+    display: flex;
+    height: 200px;
+    padding-left: 5%;
+}
+
+.header-buletin .sampul{
+    flex: 1;
+    text-align: left;
+}
+
+.header-buletin .sampul img{
+    height: 100%;
+}
+
+.header-buletin .deskripsi{
+    flex: 6;
+    text-align: left;
+    align-self: center;
+    padding-left: 5%;
+}
+
+.header-buletin .deskripsi h1{
+    font-family: 'Raleway';
+    font-size: 50px;
+}
+
+.header-buletin .deskripsi p{
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+table{
+    width: 90%;
+    margin-left: 5%;
+}
+
+table h1{
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-top: 20px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+table td{
+    vertical-align: top;
+    padding-bottom: 20px;
+    width: 25%;
+}
+
+table td.identifier{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+table td.kolom-2{
+    padding-left: 5%;
+}
+.konten-buletin{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.konten-buletin ul li{
+    background-color: #D9DAD9;
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    list-style: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.konten-buletin ul li a{
+    display: block;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 2%;
+}
+
+.tombol a{
+    display: inline-block;
+    background-color: #55B859;
+    color: white;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 15px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 20px 3% 0 0;
+}
+
+.tombol a i {
+    color: white;
+}
+
+.tombol a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:768px){
+    table, tbody{
+        display: block;
+        width: 95%;
+    }
+    table tr, table td{
+        display: block;
+        width: 100%;
+    }
+    table td.kolom-2{
+        padding-left: 0%;
+    }
+
+    table td{
+        padding-left: 0%;
+    }
+    td{
+        text-align: center;
+    }
+
+    .header-buletin .deskripsi{
+        padding-right: 5%;
+    }
+
+    .header-buletin .deskripsi h1{
+        font-size: 40px;
+    }
+    
+    .header-buletin .deskripsi p{
+        font-size: 20px;
+    }
+
+    table h1{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .konten-buletin ul li a{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .header-buletin{
+        flex-direction: column;
+        height: fit-content;
+        padding-left: 0;
+        text-align: center;
+    }
+    .header-buletin .sampul{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header-buletin .deskripsi{
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    .header-buletin .sampul img{
+        height: 200px;
+    }
+
+    .header-buletin .deskripsi h1{
+        font-family: 'Raleway';
+        font-size: 30px;
+    }
+
+    .header-buletin .deskripsi p{
+        font-size: 18px;
+    }
+
+    .header-buletin .deskripsi h1{
+        font-size: 30px;
+    }
+    
+    .header-buletin .deskripsi p{
+        font-size: 18px;
+    }
+
+    table h1{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .konten-buletin ul li a{
+        font-size: 14px;
+    }
+    
+    .tombol a{
+        margin: 20px 5% 0 0;
+    }
+}

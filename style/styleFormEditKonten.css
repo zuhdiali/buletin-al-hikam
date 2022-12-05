@@ -1,0 +1,37 @@
+.judul-tambah-konten h1{
+    font-family: 'Raleway';
+    font-size: 80px;
+    margin: 100px 0 0 5%;
+}
+
+.kotak-form{
+    width: 90%;
+    margin: 50px 5% 0 5%;
+}
+
+table{
+    width: 100%;
+}
+table td{
+    width: 25%;
+    padding: 5px 0;
+}
+
+select, option{
+    font-family: 'Poppins';
+    font-size: 14px;
+    background-color: #f4ffec;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+
+input[type=text],textarea{
+    width: 100%;
+}
+
+textarea{
+    height: 500px;
+}

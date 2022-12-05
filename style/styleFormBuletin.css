@@ -1,0 +1,139 @@
+.judul-tambah-buletin{
+    margin: 100px 5% 0 5%;
+}
+
+.judul-tambah-buletin h1{
+    font-family: 'Raleway';
+    font-size: 80px;
+}
+
+/* formmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.kotak-form{
+    width: 90%;
+    min-height: 40vh;
+    margin: 50px 5% 0 5%;
+}
+
+label{
+    padding-left: 5%;
+}
+
+table{
+    width: 100%;
+}
+
+form td{
+    width: 25%;
+    vertical-align: top;
+}
+
+form td.kolom-2{
+    padding-left: 10%;
+}
+
+td h1{
+    padding-top: 20px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+input[type=text],textarea{
+    width: 100%;
+}
+
+textarea{
+    height: 100px;
+}
+
+
+.tombol a{
+    display: inline-block;
+    background-color: #55B859;
+    color: white;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.tombol a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+table.tombol-tabel{
+    width: 30%;
+}
+
+table.tombol-tabel td{
+    align-items: center;
+    vertical-align: bottom;
+}
+input[type=submit].edit-buletin{
+    width: auto;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #55B859;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button{
+    padding: 5px 10px;
+}
+form button.edit{
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.tombol.edit{
+    margin-left: 0;
+}
+
+@media only screen and (max-width:768px){
+    table, tbody{
+        display: block;
+        width: 100%;
+    }
+    table tr, table td{
+        display: block;
+        width: 100%;
+    }
+    table td.kolom-2{
+        padding-left: 0%;
+    }
+
+    table td{
+        padding-left: 0%;
+    }
+
+    label{
+        padding-left: 0%;
+    }
+    
+    .judul-tambah-buletin h1{
+        font-size: 50px;
+    }
+
+    form button{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    label{
+        font-size: 14px;
+    }
+
+    input[type=text], textarea{
+        font-size: 12px;
+    }
+}

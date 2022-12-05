@@ -1,0 +1,68 @@
+.judul-tambah-buletin{
+    margin: 100px 5% 0 5%;
+}
+
+.judul-tambah-buletin h1{
+    font-family: 'Raleway';
+    font-size: 80px;
+}
+
+/* formmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.kotak-form{
+    width: 90%;
+    min-height: 40vh;
+    margin: 50px 5% 0 5%;
+}
+.kotak-form p{
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+input[type=file]{
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 5px;
+}
+form button{
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+td.label{
+    /* padding-left: 5%; */
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+table td.label p{
+    font-size: 16px;
+}
+
+table{
+    width: 100%;
+}
+
+table td{
+    width: 100%;
+    vertical-align: top;
+}
+
+@media only screen and (max-width:768px){
+    .judul-tambah-buletin h1{
+        font-size: 50px;
+    }
+    table td.label p{
+        font-size: 14px;
+    }
+    form button{
+        margin-top: 30px;
+    }
+    td.label{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    input[type=text], textarea{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,103 @@
+/* daftar buletinnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
+.header-tulisan{
+    margin: 100px 5% 0 5%;
+}
+
+.header-tulisan h1{
+    font-family: 'Raleway';
+    font-size: 80px;
+}
+.isi-konten{
+    margin-top: 50px;
+    min-height: 50vh;
+    padding: 0 5%;
+}
+
+input[type="text"]#keyword{
+    width: 100%;
+    font-size: 20px;
+}
+
+input:focus{
+    border: #55B859;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    table-layout:auto;
+}
+
+table *{
+    font-family: 'Poppins';
+    padding: 5px 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+table th{
+    background-color: #55B859;
+    color: white;
+    font-size: 20px;
+}
+th, td{
+    border: 1px solid #55B859;
+}
+td.kolom-1{
+    text-align: center;
+    width: 3%;
+}
+td.kolom-3{
+    width: 5%;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+td a{
+    display: block;
+    font-size: 20px;
+    padding: 0;
+}
+td i{
+    color: #55B859;
+    font-size: 22px;
+    padding: 0;
+    width: 100%;
+}
+table td i:hover{
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+    .header-tulisan h1{
+        font-size: 50px;
+    }
+    input[type="text"]#keyword{
+        font-size: 18px;
+    }
+    table th, table td{
+        font-size: 16px;
+    }
+    
+    td i{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .header-tulisan h1{
+        font-size: 40px;
+    }
+    input[type="text"]#keyword{
+        font-size: 14px;
+    }
+    table th, table td{
+        font-size: 14px;
+    }
+    
+    td i{
+        font-size: 18px;
+    }
+}

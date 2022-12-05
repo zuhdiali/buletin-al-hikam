@@ -1,0 +1,196 @@
+/* kontennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+body{
+    overflow-x: hidden;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 50px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "atas atas atas"
+        "tengah tengah tengah"
+        "bawah bawah bawah";
+}
+
+.atas { grid-area: atas; }
+
+.tengah {  display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo-smansa deskripsi-al-hikam logo-kki";
+    grid-area: tengah;
+}
+
+.logo-smansa { grid-area: logo-smansa; }
+
+.logo-kki { grid-area: logo-kki; }
+
+.deskripsi-al-hikam { grid-area: deskripsi-al-hikam; }
+
+.bawah { grid-area: bawah; }
+
+
+  /* Mulai styling sendiri */
+.atas{
+    background-image: url('../img/beranda.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-bottom: 20px;
+}
+.selamat-datang{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.selamat-datang .tulisan-selamat{
+    flex: 1;
+    margin: 100px 5% 0 5%;
+}
+
+h1{
+    font-family: 'Raleway';
+    font-size: 80px;
+}
+
+p{
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+
+.selamat-datang p{
+    margin-top: 20px;
+}
+
+.selamat-datang .bg-beranda{
+    flex: 1;
+}
+.selamat-datang .bg-beranda img{
+    float: right;
+    top: 0px;
+    right: -10px;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* tombollllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll */
+.tombol.login{
+    margin-left: 0;
+}
+
+.tombol a{
+    display: inline-block;
+    background-color: #55B859;
+    color: white;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 20px 0 0 5%;
+}
+
+/* tengahhhhhhhhhhhhhhhhhhhhh */
+.tengah{
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+.tengah img{
+    width: 50%;
+}
+
+/* tulisan al-hikammmmmmmmmmmm */
+.tulisan-al-hikam{
+    margin: 20px 0;
+}
+.tulisan-al-hikam img{
+    width: 75%;
+}
+
+h2{
+    font-family: 'Raleway';
+    font-size: 50px;
+}
+
+.bawah {
+    padding: 0 5% 0 35%;
+    margin: 20px 0;
+    background-image: url('../img/beranda2.png');
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-bottom: 20px;
+}
+.tombol.jelajahi{
+    margin-left: 0;
+}
+.tombol.jelajahi a{
+    margin-left: 0;
+}
+
+@media only screen and (max-width:900px) {
+    .tengah{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .bawah{
+        background-image: none;
+    }
+    h2{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .atas{
+        background-image: none;
+    }
+    .selamat-datang .bg-beranda{
+        display: none;
+    }
+    .tengah{
+        grid-template-columns: 0 2fr 0;
+    }
+    .tengah .deskripsi-al-hikam{
+        padding: 0 5%;
+    }
+    .bawah{
+        padding-left: 5%;
+    }
+    .bawah .tulisan-al-hikam{
+        text-align: center;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .tombol a{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 16px;
+    }
+
+    .tombol a{
+        font-size: 14px;
+    }
+}

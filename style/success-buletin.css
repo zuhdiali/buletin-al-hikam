@@ -1,0 +1,62 @@
+.judul-tambah-buletin{
+    margin: 100px 5% 0 5%;
+    min-height: 60vh;
+}
+
+.judul-tambah-buletin h1{
+    font-family: 'Raleway';
+    font-size: 80px;
+}
+.judul-tambah-buletin p{
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+/* tombollllllllllllllllll */
+.tombol a{
+    display: inline-block;
+    background-color: #55B859;
+    color: white;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 30px 0 0 5%;
+}
+
+.tombol a:hover{
+    transform: scale(1.2);
+}
+
+.tombol.kembali{
+    margin-left: 0;
+}
+.tombol.kembali a{
+    margin-left: 0;
+}
+.tombol a i, form button i{
+    color: white;
+}
+.pesan-error{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: red;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width:768px){
+    .judul-tambah-buletin h1{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .judul-tambah-buletin h1{
+        font-size: 40px;
+    }
+}

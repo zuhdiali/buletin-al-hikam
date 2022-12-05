@@ -1,0 +1,101 @@
+.tombol.kembali{
+    margin-top: 50px;
+}
+
+.header-konten{
+    margin: 30px 5% 0 5%;
+    font-family: 'Poppins';
+}
+
+.header-konten h1{
+    font-family: 'Raleway';
+    font-size: 70px;
+}
+
+.header-konten p{
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.isi-konten{
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 5% 0 5%;
+    min-height: 45vh;
+}
+
+.isi-konten p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-align: justify;
+    /* text-indent: 5%; */
+}
+
+/* tombolllllllll */
+.tombol{
+    margin-left: 5%;
+}
+.tombol a{
+    display: inline-block;
+    background-color: #55B859;
+    color: white;
+    height: fit-content;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 5px 15px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 30px 3% 0 0;
+}
+
+.tombol a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.tombol a i {
+    color: white;
+}
+
+.tombol.tulisan a i{
+    color: white;
+}
+
+.header-konten.hapus{
+    margin-top: 100px;
+}
+
+.tombol.hapus{
+    margin-left: 0;
+}
+
+@media only screen and (max-width:768px){
+    .header-konten h1{
+        font-size: 50px;
+    }
+    
+    .header-konten p{
+        font-family: 'Poppins';
+        font-size: 18px;
+    }
+    
+
+}
+
+@media only screen and (max-width:576px){
+    .header-konten h1{
+        font-size: 30px;
+    }
+    
+    .header-konten p{
+        font-family: 'Poppins';
+        font-size: 16px;
+    }
+    .isi-konten{
+        font-size: 14px;
+    }
+
+    .tombol a{
+        margin: 30px 5% 0 0;
+    }
+}
